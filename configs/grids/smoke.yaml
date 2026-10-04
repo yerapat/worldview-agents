@@ -1,0 +1,13 @@
+# One cheap local model, two worldviews, one stub task: 2 runs.
+# Override the model with: make smoke MODEL=claude-haiku
+name: smoke
+worldviews:
+  - prompts/worldviews/lab_default.md
+  - prompts/worldviews/bible_purist.md
+models:
+  - local-qwen
+tasks:
+  - smoke_arithmetic
+seeds: [1]
+temperatures: [0.0]
+concurrency: 2

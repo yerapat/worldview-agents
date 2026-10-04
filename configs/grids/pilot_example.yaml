@@ -1,0 +1,20 @@
+# Shape of the Phase 1 solo pilot (DESIGN.md: 6 worldviews x 4 models x tiers x 5 seeds).
+# Not runnable until the task ladder exists; tasks below is a stand-in.
+name: pilot_example
+worldviews:
+  - prompts/worldviews/bible_purist.md
+  - prompts/worldviews/quran_purist.md
+  - prompts/worldviews/torah_purist.md
+  - prompts/worldviews/pali_canon_purist.md
+  - prompts/worldviews/secular_humanist.md
+  - prompts/worldviews/lab_default.md
+models:
+  - claude-haiku
+  - gpt-mini
+  - grok
+  - local-qwen
+tasks:
+  - smoke_arithmetic
+seeds: [1, 2, 3, 4, 5]
+temperatures: [0.7]
+concurrency: 8

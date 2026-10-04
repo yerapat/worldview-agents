@@ -1,0 +1,15 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Run outputs. Transcripts are the dataset, but they are published as a
+# release artifact, not committed while the harness is still changing.
+runs/
+db/*.sqlite
+db/*.sqlite-journal
+.DS_Store

@@ -1,0 +1,5 @@
+# Stub task for the end-to-end smoke test. Not part of the task ladder.
+id: smoke_arithmetic
+tier: smoke
+prompt: "What is 17 + 25? Reply with the number only."
+expected: "42"
